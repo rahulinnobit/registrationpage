@@ -1,0 +1,117 @@
+import 'package:flutter/material.dart';
+class Skill extends StatelessWidget {
+  const Skill({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+            appBar: AppBar(
+              title: Text("Skill" ),
+              backgroundColor: Colors.brown,
+            ),
+            body: Column(
+              children: <Widget>[
+                SizedBox(height: 30,),
+
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Container(
+                    height: 80,
+                    width: double.maxFinite,
+                    color: Colors.blue,
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+
+                          Text('Language',style: TextStyle(color: Colors.black
+                              ,fontSize: 22), ),
+                          Text('C ,C++ ,Python ,Dart',style: TextStyle(color: Colors.black
+                              ,fontSize: 22), ),
+                        ],
+                      ),
+                    ),
+
+                  ),
+                ),
+                Padding(
+
+
+
+                  padding: const EdgeInsets.all(8.0),
+                  child: Container(
+                    height: 100,
+                    width: double.maxFinite,
+                    color: Colors.indigo,
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+
+                          Icon(Icons.school),
+                          Text("Framework",style: TextStyle(color: Colors.black,fontSize: 22),),
+                          Text('Flutter ',style: TextStyle(color: Colors.amber,fontSize: 20),),
+
+                        ],
+                      ),
+                    ),
+
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Container(
+                    height: 100,
+                    width: double.maxFinite,
+                    color: Colors.blue,
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          Icon(
+                              Icons.school
+                          ),
+                          Text('Language',style: TextStyle(color: Colors.black,fontSize: 22),),
+                          Text('C ,C++ ,Python ,Dart',style: TextStyle(color: Colors.amber,fontSize: 20),),
+
+                        ],
+                      ),
+                    ),
+
+                  ),
+                ),
+
+
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Container(
+                    height: 100,
+                    width: double.maxFinite,
+                    color: Colors.indigo,
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          Icon(
+                              Icons.school
+                          ),
+                          Text('Class 10th',style: TextStyle(color: Colors.black,fontSize: 22),),
+                          Text('Saraswati Vidya Mandir,khalilabad',style: TextStyle(color: Colors.amber,fontSize: 20),),
+
+
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            )
+        );
+    }
+}
+
+
