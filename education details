@@ -1,0 +1,123 @@
+
+import 'package:flutter/material.dart';
+
+class educationdetails extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        iconTheme: IconThemeData( color: Colors.black),
+        title: Text('Education Details',style: TextStyle(color: Colors.black),),
+        backgroundColor: Colors.brown,
+
+      ),
+      body: Column(
+        children: <Widget>[
+          SizedBox(height: 30,),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              height: 150,
+              width: double.maxFinite,
+              color: Colors.blue,
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Icon(
+                        Icons.school
+                    ),
+                    Text('Class XII',style: TextStyle(color: Colors.black
+                        ,fontSize: 22), ),
+                    Text('School Name',style: TextStyle(color: Colors.amber,fontSize: 20),),
+                    Text('2015',style: TextStyle(color: Colors.purple,fontSize: 20),)
+                  ],
+                ),
+              ),
+
+            ),
+          ),
+          Padding(
+
+
+
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              height: 150,
+              width: double.maxFinite,
+              color: Colors.indigo,
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+
+                    Icon(Icons.school),
+                    Text('B.Tech in Computer Science',style: TextStyle(color: Colors.black,fontSize: 22),),
+                    Text('NITRA Technical Campus,Ghaziabad',style: TextStyle(color: Colors.amber,fontSize: 20),),
+                    Text('2019-2023',style: TextStyle(color: Colors.purple,fontSize: 20),),
+                    Text('82.0 %',style: TextStyle(color: Colors.green,fontSize: 20),)
+                  ],
+                ),
+              ),
+
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              height: 150,
+              width: double.maxFinite,
+              color: Colors.blue,
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Icon(
+                        Icons.school
+                    ),
+                    Text('Class 12th',style: TextStyle(color: Colors.black,fontSize: 22),),
+                    Text('H R I C Khalilabad',style: TextStyle(color: Colors.amber,fontSize: 20),),
+                    Text('2018',style: TextStyle(color: Colors.purple,fontSize: 20),),
+                    Text('84.2 %',style: TextStyle(color: Colors.greenAccent,fontSize: 20),)
+                  ],
+                ),
+              ),
+
+            ),
+          ),
+
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              height: 150,
+              width: double.maxFinite,
+              color: Colors.indigo,
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Icon(
+                        Icons.school
+                    ),
+                    Text('Class 10th',style: TextStyle(color: Colors.black,fontSize: 22),),
+                    Text('Saraswati Vidya Mandir,khalilabad',style: TextStyle(color: Colors.amber,fontSize: 20),),
+                    Text('2016',style: TextStyle(color: Colors.purple,fontSize: 20),),
+                    Text('89.8 %',style: TextStyle(color: Colors.green,fontSize: 20),),
+
+                  ],
+                ),
+              ),
+
+            ),
+          )
+        ],
+      ),
+    );
+  }
+}
