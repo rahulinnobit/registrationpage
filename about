@@ -1,0 +1,43 @@
+import 'package:flutter/material.dart';
+class About extends StatelessWidget {
+  const About({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title:Text("About"),
+         backgroundColor: Colors.brown,),
+      body: Column(
+        children: <Widget>[
+        SizedBox(height: 30,),
+
+      Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Container(
+          height: 150,
+          width: double.maxFinite,
+          color: Colors.blue,
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Icon(
+                    Icons.school
+                ),
+                Text('Rahul Gupta',style: TextStyle(color: Colors.black
+                    ,fontSize: 22), ),
+                Text('Software Engineer',style: TextStyle(color: Colors.amber,fontSize: 20),),
+                Text('INNOBIT PVT LTD',style: TextStyle(color: Colors.purple,fontSize: 20),)
+              ],
+            ),
+          ),
+
+        ),
+      ),
+    ],
+      ),
+    );
+
+  }
+}
