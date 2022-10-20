@@ -1,0 +1,165 @@
+import 'package:demo/screen/educationdetails.dart';
+import 'package:flutter/material.dart';
+
+import 'screen/About.dart';
+import 'screen/Project.dart';
+import 'screen/Skill.dart';
+
+void main() {
+  runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
+    home: Home(),
+  ));
+}
+
+class Home extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        appBar: AppBar(
+
+          backgroundColor: Colors.brown,
+          elevation: 0,
+        ),
+        body: Center(
+
+          child: Column(
+            children: <Widget>[
+              SizedBox(
+                height: 20,
+              ),
+              Text(
+                'Flutter Developer',
+                style: TextStyle(
+                    fontSize: 32,
+                    fontWeight: FontWeight.w900,color: Colors.indigo
+                ),
+              ),
+              SizedBox(
+                height: 30,
+              ),
+              CircleAvatar(
+                //  child: Text(
+                //  'GeeksFor',
+                //style: TextStyle(fontSize: 15, color: Colors.white),
+                //),
+                // backgroundImage: NetworkImage(
+                //    "https://media.geeksforgeeks.org/wp-content/uploads/20210318103632/gfg.png"),
+                //backgroundImage: AssetImage('assets/images/rahul.jpeg'),
+
+                backgroundImage: NetworkImage(
+                    "https://blog.logrocket.com/wp-content/uploads/2021/05/intro-dart-flutter-feature.png"),
+                radius: 50,
+
+              ),
+              SizedBox(
+                height: 30,
+
+              ),
+              Text(
+                ' Rahul Gupta',
+                style: TextStyle(
+                    fontSize: 44,
+                    fontWeight: FontWeight.w700,
+                    color: Colors.indigo
+                ),
+              ),
+              SizedBox(
+                height: 50,
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Column(
+                  children: <Widget>[
+                    Row(
+                      children: <Widget>[
+                        Icon(
+                          Icons.email,
+                          size: 22,
+                        ),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Text(
+                          'rahulgupta@innobitsystems.com',
+                          style: TextStyle(fontSize: 22,color: Colors.purple),
+                        )
+                      ],
+                    ),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Row(
+                      children: <Widget>[
+                        Icon(
+                          Icons.location_on,
+                          size: 22,
+                        ),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Text(
+                          'Ghaziabad,India',
+                          style: TextStyle(fontSize: 22,color:Colors.brown),
+                        )
+                      ],
+                    ),
+                    SizedBox(
+                      height: 10,
+                    ),
+
+                    SizedBox(
+                      height: 10,
+                    ),
+
+                  ],
+                ),
+              ),
+
+
+              SizedBox(height: 20,),
+              MaterialButton(onPressed: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context){
+                  return About();
+                }));
+              },child: Padding(
+                padding: EdgeInsets.only(top: 10,bottom: 10),
+                child: Text('About me',style: TextStyle(fontSize: 20,color: Colors.white),),
+
+              ),color: Colors.indigo,),
+
+
+              SizedBox(height: 20,),
+              MaterialButton(onPressed: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context){
+                  return educationdetails();
+                }));
+              },child: Padding(
+                padding: EdgeInsets.only(top: 10,bottom: 10),
+                child: Text('Education Details',style: TextStyle(fontSize: 20,color: Colors.white),),
+              ),color: Colors.indigo,),
+
+              SizedBox(height: 20,),
+              MaterialButton(onPressed: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context){
+                  return Skill();
+                }));
+              },child: Padding(
+                padding: EdgeInsets.only(top: 10,bottom: 10),
+                child: Text('Skill',style: TextStyle(fontSize: 20,color: Colors.white),),
+              ),color: Colors.indigo,),
+
+              SizedBox(height: 20,),
+              MaterialButton(onPressed: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context){
+                  return Project();
+                }));
+              },child: Padding(
+                padding: EdgeInsets.only(top: 10,bottom: 10),
+                child: Text('Project',style: TextStyle(fontSize: 20,color: Colors.white),),
+              ),color: Colors.indigo,),
+            ],
+          ),
+        ));
+  }
+}
